@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, //Hide the debug logo on the top right
-      theme: ThemeData(primarySwatch: Colors.grey),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: const RootPage(),
     ); //Everything that starts with capital letter is a widget
   }
@@ -50,6 +50,7 @@ class _RootPageState extends State<RootPage> {
         title: const Text('AZAZ'),
         leading: const Icon(Icons.add_alert_outlined),
       ),
+
       body: pages[
           currentPage], //go through pages, Home and Profile (Bottom Nav bar)
       floatingActionButton: FloatingActionButton(
